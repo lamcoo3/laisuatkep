@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let money = prompt('Nhập số tiền muốn gửi: ');
+    let year = prompt('Nhập số năm muốn gửi: ');
+    let interest = prompt('Nhập lãi suất: ');
+    goclai = money * Math.pow(1 + (interest/12), 12 * year)
+    laikep = goclai - money;
+    document.write('Lãi kép sau' + year + 'năm là: ', +laikep);
+    document.write('</br>');
+    document.write('Số tiền có được sau' + year + 'năm là: ', +goclai);
+</script>
+<body>
+    
+</body>
+</html>
